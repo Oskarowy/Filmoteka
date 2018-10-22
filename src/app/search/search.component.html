@@ -2,7 +2,10 @@
 <div class="col s12">
         <input type="text" class="search-input" placeholder="Wyszukaj film" [(ngModel)]="search">
         <div class="row">
-                <movie-preview *ngFor="let movie of searchResults; let i = index" [movie]="movie"></movie-preview>
+                <movie-preview 
+                *ngFor="let movie of searchResults; let i = index" 
+                (click)="setCurrentMovie(movie)"
+                [movie]="movie"></movie-preview>
                 <h3 [ngStyle]="{'text-align': center}">Brak rezultatów dla frazy {{search}}</h3>
         </div>
     </div>
