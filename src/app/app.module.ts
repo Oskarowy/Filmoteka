@@ -8,6 +8,7 @@ import { DisplayMovieComponent } from './display-movie.component';
 import { SearchComponent } from './search/search.component';
 import { MoviePreviewComponent } from './search/movie-preview/movie-preview.component';
 import { FooterComponent } from './footer.component';
+import { MovieService } from './movie.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,7 @@ import { FooterComponent } from './footer.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
