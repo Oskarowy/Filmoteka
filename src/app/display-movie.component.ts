@@ -11,9 +11,4 @@ export class DisplayMovieComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  getPosterUrl(path:string)
-  {
-    return "http://cdn.collider.com/wp-content/uploads/the-avengers-robert-downey-jr-iron-man-poster.jpg"
-  }
 }
